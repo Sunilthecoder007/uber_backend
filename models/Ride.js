@@ -106,7 +106,7 @@ const rideSchema = new mongoose.Schema({
   cancelledBy: {
     type: String,
     enum: ['user', 'driver', 'system'],
-    default: null
+    default: undefined
   },
   rating: {
     userRating: {

@@ -148,7 +148,7 @@ const testRideHistory = async () => {
 // Main test runner
 const runTests = async () => {
   console.log('🚀 Starting API Tests...');
-  console.log('=' * 50);
+  console.log('='.repeat(50));
 
   const tests = [
     testHealthCheck,
@@ -179,7 +179,7 @@ const runTests = async () => {
     await new Promise(resolve => setTimeout(resolve, 500));
   }
 
-  console.log('\n' + '=' * 50);
+  console.log('\n' + '='.repeat(50));
   console.log('📊 Test Results:');
   console.log(`✅ Passed: ${passed}`);
   console.log(`❌ Failed: ${failed}`);
